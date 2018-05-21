@@ -73,6 +73,7 @@ public class IndexMainActivity extends AppCompatActivity implements OnNavigation
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.content);
         viewPager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
+
             @Override
             public int getCount() {
                 return TabFragment.values().length;
